@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Data handling in R"
+date:   2022-04-06 00:28:59 +0900
+categories: R study
+---
+DataFrame call method
+
+{% highlight R %}
+1. dfrm[dfrm$var1 > 4 & dfrm$var2 > 5, c(var3, var4)]
+2. dfrm[grep("str",ignore.case=T),c("var2, var3")]
+{% endhighlight %}
+
+Dataset call method
+
+{% highlight R %}
+subset(dfrm, select = var, subset = var > condition)
+{% endhighlight R %}
+
+row, column select method
+
+{% highlight R %}
+subset(dfrm, select=columnName)
+subset(dfrm, select=c(colName1,colName2,...colNameN))
+subset(dfrm, select=columnName, subset=condition)
+{% endhighlight R %}
+
+
+Let me know other method
+
+<script src="https://utteranc.es/client.js"
+        repo="algorithsmist/algorithsmist.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
